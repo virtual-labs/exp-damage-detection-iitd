@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### This experiment aims to teach user, through a database of measured data, about how damage in a structure changes the conductance signature (EMI technique).
