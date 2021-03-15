@@ -2,7 +2,6 @@
 
 **PRE EXPRIMENT QUIZ QUESTIONS**
 
-<br>
 1) What is electro-mechanical impedance (EMI) technique?<br>
 2) What is conductance? What is susceptance?<br>
 3) Why does occurrence of damage alters the conductance signatures?<br>
@@ -65,7 +64,8 @@
 <br>
 
 **POST EXPRIMENT QUIZ QUESTIONS**
-<br>
+
+
 1) Plot and compare conductance and susceptance signature of following:<br>
 a) Incipient Damage<br>
 b) Moderate Damage<br>
