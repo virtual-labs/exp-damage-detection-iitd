@@ -6,7 +6,7 @@ In this experiment, user gets an option of drilling multiple holes of 5 mm diame
 2. Moderate Damage : 4 Holes (see Fig. 1c)
 3. Severe Damage : 8 Holes (see Fig. 1d)
  
-<img src=“images/th1.png” height="300px" />
+<img src="images/th1.png" height="300px" />
 
 User has the facility to acquire signature of the structure in pristine as well as three damaged conditions.<br>
 The signature acquisition is simulated to occur in same fashion as in the case of real experiment performed through LCR meter.<br>
@@ -17,7 +17,7 @@ Describe your observation.<br>
 To statistically quantify damage, compute root mean square deviation (RMSD) in conductance by following equation directly in MS excel:<br>
 Where<br><br>
 
-<img src=“images/th2.png” height="70px"/>
+<img src="images/th2.png" height="70px"/>
 
 G<sup>0</sup><sub>i</sub> = Baseline conductance value at i<sup>th</sup> frequency.<br>
 G<sub>i</sub> = Conductance value after a damage at i<sup>th</sup> frequency.<br>
