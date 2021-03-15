@@ -1,11 +1,12 @@
 ### These steps will be followed for the experiment
-<br>
+
 **PRE EXPRIMENT QUIZ QUESTIONS**
+
 <br>
 1) What is electro-mechanical impedance (EMI) technique?<br>
 2) What is conductance? What is susceptance?<br>
 3) Why does occurrence of damage alters the conductance signatures?<br>
-4) What is RMSD? Write an expression for it?<br>
+4) What is RMSD? Write an expression for it?<br><br>
 
 **Preparation of specimens:**
 
@@ -62,6 +63,7 @@
 <img src="images/pr9.png"/>
 
 <br>
+
 **POST EXPRIMENT QUIZ QUESTIONS**
 <br>
 1) Plot and compare conductance and susceptance signature of following:<br>
