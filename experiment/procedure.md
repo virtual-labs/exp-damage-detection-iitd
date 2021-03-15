@@ -1,4 +1,12 @@
 ### These steps will be followed for the experiment
+<br>
+**PRE EXPRIMENT QUIZ QUESTIONS**
+<br>
+1) What is electro-mechanical impedance (EMI) technique?<br>
+2) What is conductance? What is susceptance?<br>
+3) Why does occurrence of damage alters the conductance signatures?<br>
+4) What is RMSD? Write an expression for it?<br>
+
 **Preparation of specimens:**
 
 1. Click Start Here button to start the experiment.
@@ -52,3 +60,12 @@
 13. Show Graph for Severe.
  
 <img src="images/pr9.png"/>
+
+<br>
+**POST EXPRIMENT QUIZ QUESTIONS**
+<br>
+1) Plot and compare conductance and susceptance signature of following:<br>
+a) Incipient Damage<br>
+b) Moderate Damage<br>
+c) Severe Damage<br>
+2) Compute RMSD for all above cases.<br>
