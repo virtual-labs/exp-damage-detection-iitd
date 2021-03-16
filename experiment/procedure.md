@@ -1,6 +1,6 @@
 ### These steps will be followed for the experiment
 
-**PRE EXPRIMENT QUIZ QUESTIONS**
+**PRE EXPRIMENT TASK**
 
 1) What is electro-mechanical impedance (EMI) technique?<br>
 2) What is conductance? What is susceptance?<br>
@@ -63,7 +63,7 @@
 
 <br>
 
-**POST EXPRIMENT QUIZ QUESTIONS**
+**POST EXPRIMENT TASK**
 
 
 1) Plot and compare conductance and susceptance signature of following:<br>
