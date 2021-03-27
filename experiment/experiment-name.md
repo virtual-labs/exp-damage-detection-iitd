@@ -1,1 +1,1 @@
-## Experiment name
+## Damage Detection and Qualitative Quantification Using Electro-Mechanical Impedence (EMI) Technique

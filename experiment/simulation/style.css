@@ -1,0 +1,480 @@
+html
+
+{
+
+    -moz-user-select     : none;
+
+    -khtml-user-select   : none;
+
+    -webkit-user-select  : none;
+
+    -o-user-select       : none;
+
+    user-select          : none;
+
+}
+
+#transwhite
+{
+	/**/
+	border: 2px solid #F36F21;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 0px;
+
+}
+
+#transwhite1
+{
+	/**/
+	border: 2px solid #F36F21;
+	background-color: rgb(255, 255, 255, 0.95);
+	border-radius: 0px;
+
+}
+
+#transwhite2
+{
+	/**/
+	border: 2px solid #F36F21;
+	background-color: #FFF;
+	border-radius: 0px;
+
+}
+
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 14px;
+}
+.style4 {color: #FF33CC}
+.style6 {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 18px;
+}
+.style7 {font-size: 14px}
+.style8 {
+	font-weight: bold;
+	color: #CC0000;
+	font-size: 18px;
+	font-style: italic;
+}
+.style10 {
+	font-size: 18px;
+	color: #990000;
+	font-weight: bold;
+}
+
+#simscreen
+
+{
+
+	position: relative;
+
+	left:0px;
+
+	top:0px;
+
+	height: 600px; 
+
+	width:800px;
+
+	border:solid 1px;
+	
+	background-color: #dce5ec;
+}
+
+
+
+#title{
+
+	position:relative;
+
+	left: 0px;
+
+	top: 0px;
+
+	height:40px;
+
+	font-size: 20px;
+
+	text-align:center;
+
+	background-color: #ff6600;
+
+	font-family: verdana;
+
+	color: White;
+
+	text-transform: uppercase; 
+
+}
+
+
+
+#title h3
+
+{
+
+	padding-top:8px;
+font-size: 20px;
+
+	margin:0px;
+
+}
+
+
+
+.simsubscreen
+
+{
+
+	position:absolute;
+
+	left:0px;
+
+	top:40px;
+
+	height:558px;
+
+	width:798px;
+
+	background-color: #dce5ec;
+
+	/*background-position: bottom;
+
+	background-image: url(images/bg.jpg); */
+
+}
+
+
+
+.incanvas
+
+{
+
+	margin:10px 0 0 10px;
+
+	padding:0;
+
+}
+
+
+
+#nextButton
+
+{
+
+	position:absolute;
+
+	left:750px;
+
+	top:530px;
+
+	cursor:pointer;
+
+}
+
+
+
+.circlebg
+
+{
+
+	border-radius:100%;
+
+	font-size:25px;
+
+	color:#fff;
+
+	text-align:center;
+
+	background:#000
+
+}
+
+
+
+.steptext
+{
+
+	display:inline;
+
+	font-size:14px;
+
+}
+
+
+
+/* canvas 1 */
+
+/* curing cube 1*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes addpiler11
+
+{
+
+	0% {left:600px; top:215px;}
+
+	40%{left:100px; top:215px;}
+
+	100% {left:100px; top:400px;}
+
+}
+
+
+
+/* Standard syntax */
+
+@keyframes addpiler11
+
+{
+
+	0% {left:600px; top:215px;}
+
+	40%{left:100px; top:215px;}
+
+	100% {left:100px; top:400px;}
+
+}
+
+/* canvas 1 */
+
+/* curing cube 1*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes addpiler21
+
+{
+
+	0% {left:660px; top:215px;}
+
+	40%{left:160px; top:215px;}
+
+	100% {left:160px; top:400px;}
+
+}
+
+
+
+/* Standard syntax */
+
+@keyframes addpiler21
+
+{
+
+	0% {left:660px; top:215px;}
+
+	40%{left:160px; top:215px;}
+
+	100% {left:160px; top:400px;}
+
+}
+/* curing cube 2*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes addbeam11
+
+{
+
+	0% {left:320px; top:265px;}
+
+	/*40%{left:320px; top:260px;}*/
+
+	100% {left:320px; top:490px;}
+
+}
+
+
+
+/* Standard syntax */
+
+@keyframes addbeam11
+
+{
+
+	0% {left:320px; top:265px;}
+
+	/*40%{left:320px; top:260px;}*/
+
+	100% {left:320px; top:490px;}
+
+}
+
+/* canvas 1 */
+
+/* curing cube 1*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes movepiler11
+
+{
+	
+	0% {left:100px; top:400px;}
+
+	/*40%{left:100px; top:350px;}*/
+	
+	100% {left:130px; top:430px;}
+
+	
+}
+
+
+
+/* Standard syntax */
+
+@keyframes movepiler11
+
+{
+
+	0% {left:100px; top:400px;}
+
+	/*40%{left:100px; top:350px;}*/
+	
+	100% {left:130px; top:430px;}
+
+}
+
+
+/* canvas 1 */
+
+/* curing cube 1*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes movepiler21
+
+{
+	0% {left:160px; top:400px;}
+
+	/*40%{left:260px; top:335px;}*/
+	
+	100% {left:520px; top:430px;}
+}
+
+
+
+/* Standard syntax */
+
+@keyframes movepiler21
+
+{
+	
+	0% {left:160px; top:400px;}
+
+	/*40%{left:260px; top:335px;}*/
+	
+	100% {left:520px; top:430px;}
+
+}
+
+
+
+/* curing cube 2*/
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes movebeam11
+
+{
+
+	100% {left: 120px; top: 373px;}
+
+	/*40%{left:320px; top:204px;}*/
+
+	0% {left:320px; top:490px;}
+
+}
+
+
+
+/* Standard syntax 
+
+@keyframes movebeam11
+
+{
+
+	100% {left: 120px; top: 277px;}
+
+	40%{left:320px; top:204px;}
+
+	0% {left:320px; top:400px;}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scene 12 code end*/
+
+
+/*======================================================*/
+
+/*start Blinking*/
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  color: #2150a0;
+}
+
+@keyframes blinker {
+  50% {
+  	color: #2150a0;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+
+/*
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+*/

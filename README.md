@@ -1,20 +1,20 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Civil Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Virtual Smart Structures & Dynamics Laboratory
+<b> Experiment|     <b> 3. Damage Detection and Qualitative Quantification Using Electro-Mechanical Impedence (EMI) Technique 
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+This experiment aims to teach user, through a database of measured data, about how damage in a structure changes the conductance signature (EMI technique).
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Suresh Bhalla 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  IIT Delhi
+<b> Email id|     <b>  sbhalla@civil.iitd.ac.in 
+<b> Department |  Civil Engineering
 
 ### Contributors List
 
