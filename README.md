@@ -4,7 +4,7 @@
 <b>Discipline | <b>Civil Engineering
 :--|:--|
 <b> Lab | <b> Virtual Smart Structures & Dynamics Laboratory
-<b> Experiment|     <b> 1. Modes of Vibrations of Vibration of Simply Supported Beam 
+<b> Experiment|     <b> 3. Damage Detection and Qualitative Quantification Using Electro-Mechanical Impedence (EMI) Technique 
 
 ### About the Experiment 
 
