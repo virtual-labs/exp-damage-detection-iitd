@@ -18,7 +18,7 @@ User has the facility to acquire signature of the structure in pristine as well 
 
 To statistically quantify damage, compute root mean square deviation (RMSD) in conductance by following equation directly in MS excel:
 
-<img src="images/th2.png" height="70px"/>
+<centerr><img src="images/th2.png" height="122px"/></center>
 
 Where<br><br>
 
