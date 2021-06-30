@@ -24,6 +24,7 @@ Where
 
 G<sub>i</sub><sup>0</sup> = Baseline conductance value at <i>i<sup>th</sup></i> frequency.<br>
 G<sub>i</sub><sup>1</sup> = Conductance value after a damage at <i>i<sup>th</sup></i> frequency.<br>
-<i>n</i> = No. of frequency data points
+<i>n</i> = No. of frequency data points<br>
+
 As an exercise plot a histogram of RMSD for various damaged states. Describe your observation<br>
 
