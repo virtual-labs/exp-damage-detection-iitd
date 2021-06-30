@@ -344,8 +344,8 @@ function agesizeIn()
 
 {
 
-    t1 = document.getElementById("thck1").value;
-    p1 = document.getElementById("poi1").value;
+    t1 = parseInt(document.getElementById("thck1").value);
+    p1 = parseInt(document.getElementById("poi1").value);
 
 
 // if (l1 !== "" && t1 !== "" && p1 !== "")
@@ -443,8 +443,8 @@ function agesizeIn2()
 
 {
 
-    t2 = document.getElementById("thck2").value;
-    p2 = document.getElementById("poi2").value;
+    t2 = parseInt(document.getElementById("thck2").value);
+    p2 = parseInt(document.getElementById("poi2").value);
 
 
 // if (l1 !== "" && t1 !== "" && p1 !== "")
@@ -542,8 +542,8 @@ function agesizeIn3()
 
 {
 
-    t3 = document.getElementById("thck3").value;
-    p3 = document.getElementById("poi3").value;
+    t3 = parseInt(document.getElementById("thck3").value);
+    p3 = parseInt(document.getElementById("poi3").value);
 
 
 // if (l1 !== "" && t1 !== "" && p1 !== "")
@@ -639,8 +639,8 @@ function agesizeIn4()
 
 {
 
-    t4 = document.getElementById("thck4").value;
-    p4 = document.getElementById("poi4").value;
+    t4 = parseInt(document.getElementById("thck4").value);
+    p4 = parseInt(document.getElementById("poi4").value);
 
 
 // if (l1 !== "" && t1 !== "" && p1 !== "")
