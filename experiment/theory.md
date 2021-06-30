@@ -20,11 +20,9 @@ To statistically quantify damage, compute root mean square deviation (RMSD) in c
 
 <centerr><img src="images/th2.png" height="122px"/></center>
 
-Where<br><br>
+Where
 
-
-
-G<sup>0</sup><sub>i</sub> = Baseline conductance value at i<sup>th</sup> frequency.<br>
-G<sub>i</sub> = Conductance value after a damage at i<sup>th</sup> frequency.<br>
+G<sub>i</sub><sup>0</sup> = Baseline conductance value at i<sup>th</sup> frequency.<br>
+G<sub>i</sub><sup>1</sup> = Conductance value after a damage at i<sup>th</sup> frequency.<br>
 As an exercise plot a histogram of RMSD for various damaged states. Describe your observation<br>
 
