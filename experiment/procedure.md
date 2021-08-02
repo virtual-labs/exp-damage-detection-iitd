@@ -1,6 +1,6 @@
 ### These steps will be followed for the experiment
 
-**PRE EXPRIMENT TASK**
+**PRE EXPERIMENT TASK**
 
 1) What is electro-mechanical impedance (EMI) technique?<br>
 2) What is conductance? What is susceptance?<br>
@@ -9,7 +9,7 @@
 
 **Preparation of specimens:**
 
-1. Click Start Here button to start the experiment.
+1. Click start experiment button to start the experiment.
  
 <img src="images/pr1.png"/>
 
@@ -21,7 +21,7 @@
  
 <img src="images/pr10.png"/>
 
-4. Show Graph for Pristine.
+4. Show graph for Pristine.
  
 <img src="images/pr9.png"/>
 
@@ -29,11 +29,11 @@
  
 <img src="images/pr3.png"/>
 
-6. Enter details for Incipent.
+6. Enter details for incipient.
  
 <img src="images/pr6.png"/>
 
-7. Show Graph for Incipent.
+7. Show graph for incipient.
  
 <img src="images/pr9.png"/>
 
@@ -45,7 +45,7 @@
  
 <img src="images/pr7.png"/>
 
-10.  Show Graph for Moderate.
+10.  Show graph for Moderate.
  
 <img src="images/pr9.png"/>
 
@@ -57,13 +57,13 @@
  
 <img src="images/pr8.png"/>
 
-13. Show Graph for Severe.
+13. Show graph for Severe.
  
 <img src="images/pr9.png"/>
 
 <br>
 
-**POST EXPRIMENT TASK**
+**POST EXPERIMENT TASK**
 
 
 1) Plot and compare conductance and susceptance signature of following:<br>
