@@ -5,5 +5,7 @@
 
 3. Literature on Smart Materials: <a href="http://ssdl.iitd.ac.in/vssdl/smart.pdf">http://ssdl.iitd.ac.in/vssdl/smart.pdf</a>
 
-4. Bhalla, S. (2004), ”A mechanical Impedance Approach for Structural Identification, Health Monitoring
-and Non-Destructive Evaluation Using Piezo-Impedance Transducers”, Ph. D. Thesis, School of
+4. Bhalla, S. (2004), ”A mechanical Impedance Approach for Structural Identification, Health Monitoring and Non-Destructive Evaluation Using Piezo-Impedance Transducers”, Ph. D. Thesis, School of
+
+5. For manual <a href="images/manual_exp7.pdf" target="_blank">click here</a>
+
