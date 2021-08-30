@@ -1,6 +1,6 @@
 ### Theory
 This experiment aims to teach the user, through a database of measured data, how occurrence of damage in a structure changes the conductance signature (EMI technique).
- The test structure is an aluminium block (50 x 48 x 10 mm), having a surface bonded PZT patch (see Fig. 1a). To learn more about the EMI technique <!--(for more details <a href="http://ssdl.iitd.ac.in/vssdl/piezo.pdf" target="_blank">click here</a>). -->
+ The test structure is an aluminium block (50 x 48 x 10 mm), having a surface bonded PZT patch (see Fig. 1a). <!--To learn more about the EMI technique (for more details <a href="http://ssdl.iitd.ac.in/vssdl/piezo.pdf" target="_blank">click here</a>). -->
 
 <!-- **EXPERIMENTAL METHODOLOGY** -->
 
