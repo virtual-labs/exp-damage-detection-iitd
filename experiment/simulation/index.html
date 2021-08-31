@@ -95,13 +95,28 @@
 <!-----<strong class="incanvas">STEP</strong>
 
             <span class="circlebg">&nbsp;1&nbsp;</span>----->
-<div id="transwhite" style="width: 200px; position: absolute; left: 555px; top: 150px; height: 200px;">
-            <p style="font-size:15px; text-align: center; padding-top: 15px;"><strong>Select Specimen Type</strong></p>
+<div id="transwhite" style="width: 200px; position: absolute; left: 555px; top: 60px; height: 440px;">
+            <p style="font-size:15px; text-align: center; padding-top: 25px;"><strong>Select Specimen Type</strong></p>
 
-            <select onchange="ok1()" id="item1" style="position: absolute; left: 15px; top: 60px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
+            <select onchange="ok1()" id="" style="position: absolute; left: 15px; top: 60px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
 
 
                 <option value="images/0.png">Pristine</option>
+
+               <!--  <option value="images/2.png">Incipient</option>
+
+                <option value="images/4.png">Moderate</option>
+
+                <option value="images/8.png">Severe</option> -->
+
+            </select>
+
+
+
+            <select onchange="ok1()" id="item1" style="position: absolute; left: 15px; top: 240px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px; visibility:hidden;">
+
+
+               <!--  <option value="images/0.png">Pristine</option> -->
 
                 <option value="images/2.png">Incipient</option>
 
@@ -110,20 +125,16 @@
                 <option value="images/8.png">Severe</option>
 
             </select>
-            <!-- <img src="image/transbox.png"  style="position:absolute; left: 91px; top: 50px; height: 450px;"/> -->
-            <input type="button" id="nextButton1" style="position:absolute; left: 30px; top: 125px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Induce Damage&nbsp;" onclick="navNext1a()"/>
+           
+            <input type="button" id="nextButton1" style="position:absolute; left: 30px; top: 110px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1aa()"/>
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 37px; top: 185px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Induce Damage&nbsp;" onclick="abc()"/>
+
+            <input type="button" id="bhum" style="position:absolute; left: 30px; top: 347px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1a()"/>
 </div>
             <img src="images/0.png" id="img2" style="position:absolute; left: 30px; top: 145px; height: 300px;" title="Plate" />
 
            
-
-            <!-- <img src="images/man.png" style="position:absolute;left: 575px; top: 75px; height: 370px;" title="Man" /> -->
-
-            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Specimen Type<br>Beam</strong></p> -->
-
-
-
-            
 
         </div>
         

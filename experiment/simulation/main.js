@@ -1,17 +1,18 @@
 
-// var l1 =0;
-// var b1 =0;
-// var d1 =0;
-
-// var a1 =0;
-// var i1 =0;
-
-// var el1 =0;
-// var den1 =0;
-// var vn =0;
-// var freq1 =0;
 
 var item1 =0;
+
+function abc()
+
+{
+
+       // alert("bgfhg");
+       document.getElementById("item1").style.visibility="visible";
+       document.getElementById("bhum").style.visibility="visible";     
+
+}
+
+
 
 function navNext1()
 
@@ -22,6 +23,18 @@ function navNext1()
         document.getElementById("canvas1a").style.visibility="visible";//canvas2      
 
 }
+
+
+
+function navNext1aa()
+
+{
+
+      
+                document.getElementById("canvas1a").style.visibility="hidden";
+                document.getElementById("canvas2").style.visibility="visible";
+           
+  }
 
 function navNext1a()
 
@@ -67,10 +80,9 @@ function ok1()
 
 var eID = document.getElementById("item1");
 var colorVal = eID.options[eID.selectedIndex].value;
-//var colortxt = eID.options[eID.selectedIndex].text;
+
 document.getElementById('img2').src=colorVal;
-// document.getElementById('selectprocessor').style.visibility="hidden";
-// document.getElementById('selectram').style.visibility="visible";
+
 }
 
 
@@ -78,20 +90,10 @@ document.getElementById('img2').src=colorVal;
 function navNext3()
 
 {
-
         document.getElementById("canvas3").style.visibility="hidden";
 
         document.getElementById("canvas4").style.visibility="visible";
-
-        //Month Print
-//document.getElementById("demo01").innerHTML = logo.getMonth() + 1;
-//Date Print
-//document.getElementById("demo02").innerHTML = logo.getDate();
-//Year Print
-//document.getElementById("demo03").innerHTML = logo.getFullYear();
-
-        //document.getElementById("cubedatehidden1").style.visibility="visible";
-
+        
 }
 
 
@@ -106,7 +108,6 @@ function navNext4x()
 
         document.getElementById("arrow4").style.visibility="visible";
 
-        //document.getElementById("cubedatehidden").style.visibility="visible";
 }
 
 
@@ -119,27 +120,6 @@ function navNext5()
         document.getElementById("canvas6").style.visibility="visible";
 
         document.getElementById("arrow6").style.visibility="visible";
-
-        /*Countdown Timer Animation Code Start*  
-        function animateValue(id, start, end, duration) {
-                var range = end - start;
-                var current = start;
-                var increment = end > start? 1 : -1;
-                var stepTime = Math.abs(Math.floor(duration / range));
-                var obj = document.getElementById(id);
-                var timer = setInterval(function() 
-                {
-                    current += increment;
-                    obj.innerHTML = current;
-                    if (current == end) 
-                    {
-                        clearInterval(timer);
-                    }
-                }, stepTime);
-        }
-
-        animateValue("value", 0, 250, 7000);
-        /*Countdown Timer Animation Code End*/
 
 }
 
@@ -156,10 +136,8 @@ function navNext6a()
 
         document.getElementById("canvas7").style.visibility="visible";
 
-        
-
-        //document.getElementById("cubedatehidden").style.visibility="visible";
 }
+
 function navNext7()
 
 {
@@ -171,27 +149,13 @@ function navNext7()
         document.getElementById("larrow6").style.visibility="visible";
 
 }
+
 function navNe()
 {
 
         document.getElementById("canvas8").style.visibility="hidden";
 
         document.getElementById("canvas9").style.visibility="visible";
-
-        
-
-    // if (size == 500)//numbox == 2.33 && size == 10)
-    // {
-    //     document.getElementById("abox").innerHTML = 120; 
-    // }
-    // else if (size == 700)//numbox == 5.25 && size == 15)
-    // {
-    //     document.getElementById("abox").innerHTML = 190;
-    // }
-    // else
-    // {
-    //     alert("Wrong");
-    // }
 
 }
 
@@ -224,21 +188,6 @@ function navNext10()
 
         document.getElementById("canvas11").style.visibility="visible";
 
-        
-
-        // if (size == 500)//numbox == 2.33 && size == 10)
-        // {
-        //     document.getElementById("bbox").innerHTML = 99; 
-        // }
-        // else if (size == 700)//numbox == 5.25 && size == 15)
-        // {
-        //     document.getElementById("bbox").innerHTML = 148;
-        // }
-        // else
-        // {
-        //     alert("Wrong");
-        // }
-
 }
 
 function navNext11()
@@ -254,7 +203,6 @@ function navNext11()
         document.getElementById("get4").innerHTML = freq1;
         document.getElementById("get5").innerHTML = freq2;
         document.getElementById("get6").innerHTML = freq3;
-
 
         document.getElementById("sarrow6").style.visibility="visible";
 
@@ -283,52 +231,6 @@ function reset()
 }
 
 
-/*
-========================
-<p id="demo"></p>
-
-<script>
-
-var i= 2;
-var l= 250;
-var freq =0;
-var text = [];
-for ( i; i<l; i+=0.1 ){
-    x2= i;
-    freq = x2.toFixed(1);
-    
-  text += freq + "<br>";
-}
-document.getElementById("demo").innerHTML = text;
-</script>
-=========================
-<!DOCTYPE html>
-<html>
-<body>
-
-<p id="demo"></p>
-
-<script>
-
-var i= 2;
-var l= 250;
-var freq =0;
-var text = [];
-for ( i; i<l; i+=0.1 ){
-    x2= i;
-    freq = x2.toFixed(1);
-    
-    
-  text += "[" + freq + "," + freq + "," +  "]" + "<br>";  
-  text += "["  + "," +  "]" + "<br>";
-}
-document.getElementById("demo").innerHTML = text;
-</script>
-
-</body>
-</html>
-
-*/
 
 ////////////===========   Specimen 1  =================//////////
 
@@ -2201,6 +2103,17 @@ function showgraph1(){
   width: 500,
   height: 300
 });
+
+
+// function bhu1(){
+
+// alert("bh");
+//     document.getElementById("item1").style.visibility="visible";
+   
+// }
+
+
+
 
  /*   
     
