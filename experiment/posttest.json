@@ -1,42 +1,44 @@
 [{
-	"question": "Q1. Select attributes which are used with ‹body› tag in html.",
+	"question": "Q1. Moderate Damage has",
 	"answers": {
-		"a": "bgcolor",
-		"b": "background",
-		"c": "text",
-		"d": "All of the above"
+		"a": "6 Holes",
+		"b": "4 Holes",
+		"c": "8 Holes",
+		"d": "2 Holes"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Q2. In this experiment, user gets an option of drilling multiple holes of _____ diameter",
+	"answers": {
+		"a": "5 mm",
+		"b": "2 mm",
+		"c": "4 mm",
+		"d": "1 mm"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q3. <i>n</i> is the",
+	"answers": {
+		"a": "Conductance value after a damage",
+		"b": "Baseline conductance value",
+		"c": "Damaged state",
+		"d": "No. of frequency data points"
 	},
 	"correctAnswer": "d"
 }, {
-	"question": "Q2. Title attribute can be used in ______________ tag ?",
-	"answers": {
-		"a": "p",
-		"b": "h1",
-		"c": "both",
-		"d": "none"
-	},
-	"correctAnswer": "c"
-}, {
-	"question": "Q3. Align attribute can be used with ‹p› and ‹h1› tags both.",
+	"question": "Q4. Can we occurrence of damage in a structure changes the conductance signature (EMI technique)?",
 	"answers": {
 		"a": "True",
 		"b": "False"
 	},
 	"correctAnswer": "a"
 }, {
-	"question": "Q4. Attributes are used within the closing tag of HTML element. State True or False.",
+	"question": "Q5. Severe Damage has 8 holes",
 	"answers": {
 		"a": "True",
-		"b": "False"
+		"b": "False",
+		// "c": "setcolor",
+		// "d": "None"
 	},
-	"correctAnswer": "b"
-}, {
-	"question": "Q5. We can change color of the text in web page through _____________ attribute.",
-	"answers": {
-		"a": "changecolor",
-		"b": "text",
-		"c": "setcolor",
-		"d": "None"
-	},
-	"correctAnswer": "b"
+	"correctAnswer": "a"
 }]
