@@ -36,9 +36,8 @@
 	"question": "Q5. Severe Damage has 8 holes",
 	"answers": {
 		"a": "True",
-		"b": "False",
-		// "c": "setcolor",
-		// "d": "None"
+		"b": "False"
+
 	},
 	"correctAnswer": "a"
 }]
