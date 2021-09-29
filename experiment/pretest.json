@@ -1,0 +1,32 @@
+[{
+	"question": "Q1. The data file for any condition has ___ columns",
+	"answers": {
+		"a": "Three",
+		"b": "Four",
+		"c": "Eight",
+		"d": "Six"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q2. You cannot acquire the signatures in this fashion for any damaged state and can download the signature as delimited data file.",
+	"answers": {
+		"a": "True",
+		"b": "False"
+		
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Q3. The user can plot the signatures of all four states in a single graph",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q4. Pristine has no holes",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}]
