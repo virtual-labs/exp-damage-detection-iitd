@@ -27,7 +27,7 @@
 	},
 	"correctAnswer": "a"
 }, {
-	"question": "Q4. Pristine has no holes",
+	"question": "Q4. RMSD is a statistical parameter",
 	"answers": {
 		"a": "True",
 		"b": "False"
