@@ -18,10 +18,12 @@
 	},
 	"correctAnswer": "b"
 }, {
-	"question": "Q3. The user can plot the signatures of all four states in a single graph",
+	"question": "Q3. Signature consists of",
 	"answers": {
-		"a": "True",
-		"b": "False"
+		"a": "Real and Imaginary parts",
+		"b": "Only real part",
+		"c": "Only imaginary part",
+		"d": "None of the above"
 	},
 	"correctAnswer": "a"
 }, {
