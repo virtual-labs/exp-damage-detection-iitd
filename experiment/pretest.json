@@ -1,12 +1,12 @@
 [{
-	"question": "Q1. The data file for any condition has ___ columns",
+	"question": "Q1. The EMI technique uses following as sensor and actuator",
 	"answers": {
-		"a": "Three",
-		"b": "Four",
-		"c": "Eight",
-		"d": "Six"
+		"a": "Accelerometer",
+		"b": "PZT patch",
+		"c": "Strain gauge",
+		"d": "None of the above"
 	},
-	"correctAnswer": "a"
+	"correctAnswer": "b"
 }, {
 	"question": "Q2. You cannot acquire the signatures in this fashion for any damaged state and can download the signature as delimited data file.",
 	"answers": {
