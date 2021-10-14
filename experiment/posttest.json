@@ -26,7 +26,7 @@
 	},
 	"correctAnswer": "d"
 }, {
-	"question": "Q4. The occurrence of damage in a structure changes the conductance signature (EMI technique)?",
+	"question": "Q4. The occurrence of damage in a structure changes the conductance signature (EMI technique)",
 	"answers": {
 		"a": "True",
 		"b": "False"
