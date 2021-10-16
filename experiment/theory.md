@@ -18,7 +18,7 @@ User has the facility to acquire signature of bonded PZT patch as well as three 
 
 To statistically quantify damage, compute root mean square deviation (RMSD) in conductance by following equation directly in MS excel:
 
-<center><img src="images/th2.png" height="122px"/></center>
+<center><img src="images/th2.png" height="110px"/></center>
 
 where
 
