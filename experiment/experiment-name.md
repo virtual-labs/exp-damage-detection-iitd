@@ -1,1 +1,1 @@
-## Damage Detection and Qualitative Quantification Using Electro-Mechanical Impedence (EMI) Technique
+## Damage Detection and Qualitative Severity Estimation Using EMI Technique

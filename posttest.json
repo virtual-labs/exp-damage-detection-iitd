@@ -1,0 +1,43 @@
+[{
+	"question": "Q1. Moderate Damage has",
+	"answers": {
+		"a": "6 Holes",
+		"b": "4 Holes",
+		"c": "8 Holes",
+		"d": "2 Holes"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Q2. In this experiment, user gets an option of drilling multiple holes of _____ diameter",
+	"answers": {
+		"a": "5 mm",
+		"b": "2 mm",
+		"c": "4 mm",
+		"d": "1 mm"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q3. <i>n</i> is the",
+	"answers": {
+		"a": "Conductance value after a damage",
+		"b": "Baseline conductance value",
+		"c": "Damaged state",
+		"d": "No. of frequency data points"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "Q4. Can we occurrence of damage in a structure changes the conductance signature (EMI technique)?",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q5. Severe Damage has 8 holes",
+	"answers": {
+		"a": "True",
+		"b": "False"
+
+	},
+	"correctAnswer": "a"
+}]

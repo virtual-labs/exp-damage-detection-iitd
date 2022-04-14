@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+	
 <head>
 
     <meta charset="UTF-8">
@@ -33,6 +33,11 @@
 	<script language="javascript" type="text/javascript" src="t/jquery.js"></script>
 	<script language="javascript" type="text/javascript" src="t/jquery.flot.js"></script>
 <!-- Graph Script link close -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
     <script>
 
         var simsubscreennum=0;
@@ -48,7 +53,7 @@
 <tr><td>
     <div id="simscreen">
 
-        <div id="title"><h3>Damage Detection and Qualitative Quantification (EMI) Technique</h3></div>
+        <div id="title"><h3>Damage Detection & Qualitative Severity Estimation Using EMI Technique</h3></div>
 
 
 
@@ -68,15 +73,15 @@
 
             <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
 
-            <p class="incanvas" style="font-size:14px;">Plate</p></br>
+            <p class="incanvas" style="font-size:14px;">Plate, PZT patch, LCR meter, soldering iron, wire etc.</p></br>
 </div>
-            <img src="images/0.png" style="position:absolute; left: 5px; top: 190px; height: 330px;" title="Plate" />
+            <img src="images/0.png" style="position:absolute; left: 45px; top: 230px; height: 300px;" title="Plate" />
 
            
 
             <img src="images/man.png" style="position:absolute;left: 575px; top: 75px; height: 370px;" title="Man" />
 
-            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Speciman Type<br>Beam</strong></p> -->
+            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Specimen Type<br>Beam</strong></p> -->
 
 
 
@@ -95,13 +100,28 @@
 <!-----<strong class="incanvas">STEP</strong>
 
             <span class="circlebg">&nbsp;1&nbsp;</span>----->
-<div id="transwhite" style="width: 200px; position: absolute; left: 555px; top: 150px; height: 200px;">
-            <p style="font-size:15px; text-align: center; padding-top: 15px;"><strong>Select Speciman Type</strong></p>
+<div id="transwhite" style="width: 200px; position: absolute; left: 555px; top: 60px; height: 440px;">
+            <p style="font-size:15px; text-align: center; padding-top: 25px;"><strong>Select Specimen Type</strong></p>
 
-            <select onchange="ok1()" id="item1" style="position: absolute; left: 15px; top: 60px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
+            <select onchange="ok1()" id="" style="position: absolute; left: 15px; top: 60px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
 
 
                 <option value="images/0.png">Pristine</option>
+
+               <!--  <option value="images/2.png">Incipient</option>
+
+                <option value="images/4.png">Moderate</option>
+
+                <option value="images/8.png">Severe</option> -->
+
+            </select>
+
+
+
+            <select onchange="ok1()" id="item1" style="position: absolute; left: 15px; top: 240px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px; visibility:hidden;">
+
+
+               <!--  <option value="images/0.png">Pristine</option> -->
 
                 <option value="images/2.png">Incipient</option>
 
@@ -110,20 +130,16 @@
                 <option value="images/8.png">Severe</option>
 
             </select>
-            <!-- <img src="image/transbox.png"  style="position:absolute; left: 91px; top: 50px; height: 450px;"/> -->
-            <input type="button" id="nextButton1" style="position:absolute; left: 30px; top: 125px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Induce Damage&nbsp;" onclick="navNext1a()"/>
+           
+            <input type="button" id="nextButton1" style="position:absolute; left: 30px; top: 110px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1aa()"/>
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 37px; top: 185px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Induce Damage&nbsp;" onclick="abc()"/>
+
+            <input type="button" id="bhum" style="position:absolute; left: 30px; top: 347px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1a()"/>
 </div>
             <img src="images/0.png" id="img2" style="position:absolute; left: 30px; top: 145px; height: 300px;" title="Plate" />
 
            
-
-            <!-- <img src="images/man.png" style="position:absolute;left: 575px; top: 75px; height: 370px;" title="Man" /> -->
-
-            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Speciman Type<br>Beam</strong></p> -->
-
-
-
-            
 
         </div>
         
@@ -132,7 +148,7 @@
         <!-- Condition 1 -->
 
 
-		<div class="simsubscreen" id="canvas2" style="visibility:hidden;"></br>
+		<div class="simsubscreen" id="canvas2" style="visibility:hidden;"><br>
 
 			<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
 
@@ -147,27 +163,29 @@
             <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-----><br><br>
 
             <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
-
+		    
+<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php"> -->
+<form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
  
-            <input type="Number" id="thck1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt1" id="thck1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
 
-            <input type="Number" id="poi1" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt2" id="poi1" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
 
 
             </div>
 
-            <input class="incanvas" id="submit11" type="button" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn()"/>
-
+            <input class="incanvas" id="submit11" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn()"/>
+</form>
 		</div>
 
-            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-            <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
-            </div>
+<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
+            
 
 
             <!--Blinking arrowcubox  -->
@@ -205,6 +223,9 @@
     </td>  
   </tr> 
 </table>
+
+<canvas id="myChart" style="position: absolute; left: 45px; top: 95px; max-width: 600px; max-height: 425px;"></canvas>
+
 </div>
 			<input type="button" id="rest1" value="Restart" style="position: absolute; left: 655px; top: 500px; width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF; visibility: hidden;" onclick="reset()">
       		
@@ -247,9 +268,9 @@
 
 </div>
 
-            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-            <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
-            </div>
+<!--            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
+            </div> -->
 
 
             <!--Blinking arrowcubox  -->
@@ -331,9 +352,9 @@
 
 		</div>
 
-            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-            <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
-            </div>
+<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+<!--             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
+            </div> -->
 
 
             <!--Blinking arrowcubox  -->
@@ -416,9 +437,9 @@
 
 		</div>
 
-            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-            <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
-            </div>
+<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+<!--             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
+            </div> -->
 
 
             <!--Blinking arrowcubox  -->
