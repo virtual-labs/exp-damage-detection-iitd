@@ -11,19 +11,23 @@
 
 1. Click start experiment button to start the experiment.
  
-<img src="images/pr1.png"/>
+<img src="images/pr1.png">
 
 2. Select specimen type.
  
-<img src="images/pr2.png"/>
+<img src="images/pr2.png">
 
 3. Enter details for Pristine.
  
-<img src="images/pr3.png"/>
+<img src="images/pr3.png">
+
+<br>
+
+<img src="images/pr4.png">
 
 4. Show graph for Pristine.
  
-<img src="images/pr5.png"/> 
+<img src="images/pr5.png"> 
 
 <!-- **POST EXPERIMENT TASK**
 
