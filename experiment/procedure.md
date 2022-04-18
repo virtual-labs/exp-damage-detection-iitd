@@ -21,10 +21,10 @@
  
 <img src="images/pr3.png">
 
-<br>
+<!-- <br>
 
 <img src="images/pr4.png">
-
+ -->
 4. Show graph for Pristine.
  
 <img src="images/pr5.png"> 
