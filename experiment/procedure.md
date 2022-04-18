@@ -20,7 +20,7 @@
 3. Enter details for Pristine.
  
 <img src="images/pr3.png"/>
-
+<br>
 <img src="images/pr4.png"/>
 
 4. Show graph for Pristine.
