@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiment 7</title>
+    
+
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="jquerymin.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- BEGIN BASE CSS STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"type="text/css">
+    
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="iitstyle.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- Graph Script link start-->
+	<script language="javascript" type="text/javascript" src="t/excanvas.js"></script>
+	<script language="javascript" type="text/javascript" src="t/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="t/jquery.flot.js"></script>
+<!-- Graph Script link close -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+    <script>
+
+        var simsubscreennum=0;
+
+        var temp=0;
+        
+        
+ 
+    </script>
+
+</head>
+
+<body style="margin:0; font-family: verdana;" >
+<table align="center">
+<tr><td>
+    <div id="simscreen">
+
+        <div id="title"><h3>Damage Detection & Qualitative Severity Estimation Using EMI Technique</h3></div>
+
+
+
+         <!-- Scene 1 -->
+
+
+
+        <div class="simsubscreen" id="canvas1" ></br>
+
+<!-----<strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;1&nbsp;</span>----->
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px;">
+            <p class="incanvas" style="font-size:15px;"><strong>Objective:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">To teach the user, through a database of measured data, how occurrence of damage in a structure changes the conductance signature (EMI technique).</p></br>
+
+            <p class="incanvas" style="font-size:15px;"><strong>Apparatus used:</strong></p>
+
+            <p class="incanvas" style="font-size:14px;">Plate, PZT patch, LCR meter, soldering iron, wire etc.</p></br>
+</div>
+            <img src="images/0.png" style="position:absolute; left: 45px; top: 230px; height: 300px;" title="Plate" />
+
+           
+
+            <img src="images/man.png" style="position:absolute;left: 575px; top: 75px; height: 370px;" title="Man" />
+
+            <!-- <p class="incanvas" style="font-size:18px; text-align: center; position:absolute; left:400px; top:400px;"><strong>Specimen Type<br>Beam</strong></p> -->
+
+
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 625px; top: 495px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Start Experiment&nbsp;" onclick="navNext1()"/>
+
+        </div>
+
+
+
+<!-- Scene 1a -->
+
+
+
+        <div class="simsubscreen" id="canvas1a" style="visibility:hidden;"></br>
+
+<!-----<strong class="incanvas">STEP</strong>
+
+            <span class="circlebg">&nbsp;1&nbsp;</span>----->
+<div id="transwhite" style="width: 200px; position: absolute; left: 555px; top: 60px; height: 440px;">
+            <p style="font-size:15px; text-align: center; padding-top: 25px;"><strong>Select Specimen Type</strong></p>
+
+            <select onchange="ok1()" id="" style="position: absolute; left: 15px; top: 60px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px;">
+
+
+                <option value="images/0.png">Pristine</option>
+
+               <!--  <option value="images/2.png">Incipient</option>
+
+                <option value="images/4.png">Moderate</option>
+
+                <option value="images/8.png">Severe</option> -->
+
+            </select>
+
+
+
+            <select onchange="ok1()" id="item1" style="position: absolute; left: 15px; top: 240px; width: 165px;  border: 1px solid #000;  padding-top: 2px; padding-bottom: 2px; visibility:hidden;">
+
+
+               <!--  <option value="images/0.png">Pristine</option> -->
+
+                <option value="images/2.png">Incipient</option>
+
+                <option value="images/4.png">Moderate</option>
+
+                <option value="images/8.png">Severe</option>
+
+            </select>
+           
+            <input type="button" id="nextButton1" style="position:absolute; left: 30px; top: 110px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1aa()"/>
+
+            <input type="button" id="nextButton1" style="position:absolute; left: 37px; top: 185px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF;" value="&nbsp;Induce Damage&nbsp;" onclick="abc()"/>
+
+            <input type="button" id="bhum" style="position:absolute; left: 30px; top: 347px; cursor:pointer; font-size: 15px; background-color: #2150a0; padding-top: 5px; padding-bottom: 5px; color: #FFF; visibility: hidden;" value="&nbsp;Acquire Signature&nbsp;" onclick="navNext1a()"/>
+</div>
+            <img src="images/0.png" id="img2" style="position:absolute; left: 30px; top: 145px; height: 300px;" title="Plate" />
+
+           
+
+        </div>
+        
+
+
+        <!-- Condition 1 -->
+
+
+		<div class="simsubscreen" id="canvas2" style="visibility:hidden;"><br>
+
+			<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+
+            <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Pristine State (0 Hole)</strong></span>
+
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
+
+            <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
+ 
+            <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
+            <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span----->
+            <br><br>
+<form method="post" name="frm" id="frm" action="pristine.php">
+            <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+		    
+
+<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	 -->
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
+ 
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
+
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
+
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
+
+
+            </div>
+
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit1();"/>
+</form> 
+		</div>
+
+<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
+            
+
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox2" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton2" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext2()"></i>
+
+
+        </div>
+
+<!-- Condition 1 Graph -->
+<div class="simsubscreen" id="canvas3" style="visibility:hidden;"><br>
+
+           
+		<div id="transwhite" style="width: 760px; margin-right: 20px; margin-left: 20px; padding-bottom: 20px; margin-top: 0px; padding-top: 40px;">
+
+		<span id="dedata" style="visibility: hidden; width: 200px;"></span>
+		<span id="pidata" style="font-size: 20px; position: absolute; left: 300px; top: 30px;">Line Graph for Pristine</span>
+
+<table width="100%"> 
+  <tr> 
+    <td width="4%" height="440" valign="middle">
+     <img src="images/cond.png" style=" height:130px;"/>
+    </td> 
+    <td width="71%" valign="top" style="text-align:center;">
+    	<div id="placeholder"  align="center"  style="width:600px;height:400px;"></div>
+    	<p><img src="images/frn.png" style=" height:20px;"/></p>
+	</td> 
+    <td width="20%" valign="middle" style="text-align:center;">
+    	<p> </p>
+      	<img src="images/fqmach.png" style="height:75px;" />
+      	<p><a href="zip/pristine.zip">
+      		<input type="button" value="Download Data!" style=" width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;">
+      		</a></p>
+    </td>  
+  </tr> 
+</table>
+
+<canvas id="myChart" style="position: absolute; left: 45px; top: 95px; max-width: 600px; max-height: 425px;"></canvas>
+
+</div>
+			<input type="button" id="rest1" value="Restart" style="position: absolute; left: 655px; top: 500px; width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF; visibility: hidden;" onclick="reset()">
+      		
+</div> 
+
+
+<!-- Condition 2 -->
+
+
+<div class="simsubscreen" id="canvas4" style="visibility:hidden;"> <br>
+
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+
+            <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Incipent (2 Hole)</strong></span>
+
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
+
+            <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
+ 
+            <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
+            <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-->
+            <br><br>
+<form method="post" name="frmb" id="frmb" action="Incipient.php">
+            <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+		    
+
+    
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
+ 
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
+
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
+
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
+
+
+            </div>
+
+            <input class="incanvas" id="submit11" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit2();"/>
+</form>
+		</div>
+ 
+
+             
+ 
+
+<!--            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
+             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
+            </div> -->
+
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox4" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton4" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext4()"></i>
+
+
+        </div>
+
+<!-- Condition 2 Graph -->
+<div class="simsubscreen" id="canvas5" style="visibility:hidden;"></br>
+
+           
+		<div id="transwhite" style="width: 760px; margin-right: 20px; margin-left: 20px; padding-bottom: 40px; margin-top: 0px; padding-top: 40px;">
+
+		<span id="dedata" style="visibility: hidden; width: 200px;"></span>
+		<span id="pidata" style="font-size: 20px; position: absolute; left: 300px; top: 30px;">Line Graph for Incipent</span>
+
+<table width="100%"> 
+  <tr> 
+    <td width="4%" height="440" valign="middle">
+     <img src="images/cond.png" style=" height:130px;"/>
+    </td> 
+    <td width="71%" valign="top" style="text-align:center;">
+    	<div id="placeholder2"  align="center"  style="width:600px;height:400px;"></div>
+    	<p><img src="images/frn.png" style=" height:20px;"/></p>
+	</td> 
+    <td width="20%" valign="middle" style="text-align:center;">
+    	<p> </p>
+      	<img src="images/fqmach.png" style="height:75px;" />
+      	<p><a href="zip/incipient.zip">
+      		<input type="button" value="Download Data!" style=" width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;">
+      		</a></p>
+    </td>  
+  </tr> 
+</table>
+</div>
+			<input type="button" id="rest2" value="Restart" style="position: absolute; left: 655px; top: 500px; width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF; visibility: hidden;" onclick="reset()">
+      		
+</div>
+
+
+
+<!-- Condition 3 -->
+
+
+		<div class="simsubscreen" id="canvas6" style="visibility:hidden;"><br>
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+
+            <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Moderate
+            State (4 Hole)</strong></span>
+
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
+
+            <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
+ 
+            <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
+            <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span -->
+            <br><br>
+<form method="post" name="frmf" id="frmf" action="moderate.php">
+            <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
+ 
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
+
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
+
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
+
+
+            </div>
+
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit5();"/>
+</form> 
+		<!--</div>-->
+			 <br><br>
+  
+
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox8" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton8" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext8()"></i>
+
+
+        </div>
+ 
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox6" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton6" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext6()"></i>
+
+
+        </div>
+
+<!-- Condition 3 Graph -->
+<div class="simsubscreen" id="canvas7" style="visibility:hidden;"></br>
+
+           
+		<div id="transwhite" style="width: 760px; margin-right: 20px; margin-left: 20px; padding-bottom: 40px; margin-top: 0px; padding-top: 40px;">
+
+		<span id="dedata" style="visibility: hidden; width: 200px;"></span>
+		<span id="pidata" style="font-size: 20px; position: absolute; left: 300px; top: 30px;">Line Graph for Moderate</span>
+
+<table width="100%"> 
+  <tr> 
+    <td width="4%" height="440" valign="middle">
+     <img src="images/cond.png" style=" height:130px;"/>
+    </td> 
+    <td width="71%" valign="top" style="text-align:center;">
+    	<div id="placeholder3"  align="center"  style="width:600px;height:400px;"></div>
+    	<p><img src="images/frn.png" style=" height:20px;"/></p>
+	</td> 
+    <td width="20%" valign="middle" style="text-align:center;">
+    	<p> </p>
+      	<img src="images/fqmach.png" style="height:75px;" />
+      	<p><a href="zip/moderate.zip">
+      		<input type="button" value="Download Data!" style=" width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;">
+      		</a></p>
+    </td>  
+  </tr> 
+</table>
+</div>
+			<input type="button" id="rest3" value="Restart" style="position: absolute; left: 655px; top: 500px; width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF; visibility: hidden;" onclick="reset()">
+      		
+</div>
+
+
+
+
+<!-- Condition 4 -->
+
+
+		<div class="simsubscreen" id="canvas8" style="visibility:hidden;"></br>
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+
+            <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Severe
+            State (8 Hole)</strong></span>
+
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
+
+            <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
+ 
+            <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
+            <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span -->
+            <br><br>
+<form method="post" name="frme" id="frme" action="severe.php">
+            <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+		    
+
+<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	 -->
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
+ 
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
+
+            <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
+
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
+
+
+            </div>
+
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit4();"/>
+</form> 
+		<!--</div>-->
+			 <br><br>
+  
+
+
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox8" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
+
+             <i class="fa fa-hand-o-right" id="nextButton8" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext8()"></i>
+
+
+        </div>
+
+<!-- Condition 4 Graph -->
+<div class="simsubscreen" id="canvas9" style="visibility:hidden;"></br>
+
+           
+		<div id="transwhite" style="width: 760px; margin-right: 20px; margin-left: 20px; padding-bottom: 40px; margin-top: 0px; padding-top: 40px;">
+
+		<span id="dedata" style="visibility: hidden; width: 200px;"></span>
+		<span id="pidata" style="font-size: 20px; position: absolute; left: 300px; top: 30px;">Line Graph for Severe</span>
+
+<table width="100%"> 
+  <tr> 
+    <td width="4%" height="440" valign="middle">
+     <img src="images/cond.png" style=" height:130px;"/>
+    </td> 
+    <td width="71%" valign="top" style="text-align:center;">
+    	<div id="placeholder4"  align="center"  style="width:600px;height:400px;"></div>
+    	<p><img src="images/frn.png" style=" height:20px;"/></p>
+	</td> 
+    <td width="20%" valign="middle" style="text-align:center;">
+    	<p> </p>
+      	<img src="images/fqmach.png" style="height:75px;" />
+      	<p><a href="zip/severe.zip">
+      		<input type="button" value="Download Data!" style=" width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;">
+      		</a></p>
+    </td>  
+  </tr> 
+</table>
+</div>
+			<input type="button" id="rest4" value="Restart" style="position: absolute; left: 655px; top: 500px; width: 115px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF; visibility: hidden;" onclick="reset()">
+      		
+</div>
+
+    </div><!--- First Div---->
+
+<!---<div style="text-align: center; font-size: 11px; width:800px; border:1px solid #000; position: relative; border-top:none; color: #FFF; background-color: #000;">Developed by @ <a href="#" ><strong style="color: #FFF; font-size: 12px;">Virtuality India Pvt.Ltd</strong></a></div>
+<script src="../assets/js/iframeResize.js"></script></body>
+i class="fa fa-arrow-right" style="color: #82C91E"></i>
+<i class="fa fa-arrow-left" style="color: #82C91E"></i>
+<i class="fa fa-arrow-down" style="color: #82C91E"></i>
+<i class="fa fa-arrow-up" style="color: #82C91E"></i>
+<i class="fa fa-chevron-circle-right" style="color: #82C91E"></i>
+
+
+<i class="fas fa-hand-point-right" style="color: #82C91E"></i--->
+
+</td></tr>
+</table>
+</body>
+</html>

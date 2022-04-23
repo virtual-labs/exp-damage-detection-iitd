@@ -1,0 +1,36 @@
+[{
+	"question": "Q1. The EMI technique uses following as sensor and actuator",
+	"answers": {
+		"a": "Accelerometer",
+		"b": "PZT patch",
+		"c": "Strain gauge",
+		"d": "None of the above"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Q2. Which damage is more severe?",
+	"answers": {
+		"a": "2 holes",
+		"b": "8 holes",
+		"c": "4 holes",
+		"d": "None of the above"
+		
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Q3. Signature consists of",
+	"answers": {
+		"a": "Real and Imaginary parts",
+		"b": "Only real part",
+		"c": "Only imaginary part",
+		"d": "None of the above"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "Q4. RMSD is a statistical parameter",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}]
