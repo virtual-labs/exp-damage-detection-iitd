@@ -43,7 +43,9 @@
         var simsubscreennum=0;
 
         var temp=0;
-
+        
+        
+ 
     </script>
 
 </head>
@@ -160,27 +162,28 @@
  
             <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
             <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
-            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-----><br><br>
-
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span----->
+            <br><br>
+<form method="post" name="frm" id="frm" action="pristine.php">
             <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
 		    
-<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php"> -->
-<form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	
+
+<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	 -->
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
  
-            <input type="Number" name="txt1" id="thck1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
 
-            <input type="Number" name="txt2" id="poi1" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
 
 
             </div>
 
-            <input class="incanvas" id="submit11" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn()"/>
-</form>
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit1();"/>
+</form> 
 		</div>
 
 <!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
@@ -197,7 +200,7 @@
         </div>
 
 <!-- Condition 1 Graph -->
-<div class="simsubscreen" id="canvas3" style="visibility:hidden;"></br>
+<div class="simsubscreen" id="canvas3" style="visibility:hidden;"><br>
 
            
 		<div id="transwhite" style="width: 760px; margin-right: 20px; margin-left: 20px; padding-bottom: 20px; margin-top: 0px; padding-top: 40px;">
@@ -235,38 +238,45 @@
 <!-- Condition 2 -->
 
 
-<div class="simsubscreen" id="canvas4" style="visibility:hidden;"></br>
+<div class="simsubscreen" id="canvas4" style="visibility:hidden;"> <br>
 
-			<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
 
             <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Incipent (2 Hole)</strong></span>
 
-            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox2"></span>
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
 
             <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
  
             <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
             <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
-            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-----><br><br>
-
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-->
+            <br><br>
+<form method="post" name="frmb" id="frmb" action="Incipient.php">
             <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+		    
 
+    
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
  
-            <input type="Number" id="thck2" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
 
-            <input type="Number" id="poi2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
 
 
             </div>
 
-            <input class="incanvas" id="submit11" type="button" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn2()"/>
+            <input class="incanvas" id="submit11" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit2();"/>
+</form>
+		</div>
+ 
 
-</div>
+             
+ 
 
 <!--            <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
              <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span>
@@ -318,44 +328,51 @@
 <!-- Condition 3 -->
 
 
-		<div class="simsubscreen" id="canvas6" style="visibility:hidden;"></br>
-
-			<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+		<div class="simsubscreen" id="canvas6" style="visibility:hidden;"><br>
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
 
             <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Moderate
             State (4 Hole)</strong></span>
 
-            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox3"></span>
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
 
             <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
  
             <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
             <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
-            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-----><br><br>
-
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span -->
+            <br><br>
+<form method="post" name="frmf" id="frmf" action="moderate.php">
             <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
  
-            <input type="Number" id="thck3" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
 
-            <input type="Number" id="poi3" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
 
 
             </div>
 
-            <input class="incanvas" id="submit11" type="button" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn3()"/>
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit5();"/>
+</form> 
+		<!--</div>-->
+			 <br><br>
+  
 
-		</div>
 
-<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-<!--             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
-            </div> -->
+            <!--Blinking arrowcubox  -->
+            <span class="blink_me" id="arrowcubox8" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
 
+             <i class="fa fa-hand-o-right" id="nextButton8" style="color: #764C28; position:absolute; left: 750px; top: 510px; font-size: 35px; visibility: hidden;" onclick="navNext8()"></i>
+
+
+        </div>
+ 
 
             <!--Blinking arrowcubox  -->
             <span class="blink_me" id="arrowcubox6" style="position:absolute; font-size: 30px; left: 710px; top: 510px; color: ; visibility: hidden;"><strong><i class="fa fa-arrow-right"></i></strong></span>
@@ -404,42 +421,42 @@
 
 
 		<div class="simsubscreen" id="canvas8" style="visibility:hidden;"></br>
-
-			<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
+<div id="transwhite" style="width: 700px; margin-right: 50px; margin-left: 50px; height: 370px;">
 
             <span style="position: absolute; left: 70px; top: 35px; font-size:20px; "><strong>Severe
             State (8 Hole)</strong></span>
 
-            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox4"></span>
+            <span style="position: absolute; left: 495px; top: 205px; color: red;" id="fillBox"></span>
 
             <p class="incanvas" style="position: absolute; left: 60px; top:80px; font-size:15px;">( Frequency Range Between 1 to 250 kHz )</p>  
  
             <!-- <input type="Number" id="length" style="position: absolute; left: 492px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number"> -->
             <span style="color: red; position: absolute; top: 90px; left: 360px; font-size: 18px;">*</span>
-            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span-----><br><br>
-
+            <!--span style="position: absolute; left: 480px; top: 80px;"> Days</span -->
+            <br><br>
+<form method="post" name="frme" id="frme" action="severe.php">
             <div id="breadthordepth" style="position: absolute; left: 60px; top: 150px; height: 175px; width: 680px; border: 2px solid #FFF;">
+		    
 
+<!-- <form method="post" name="frm" id="frm" action="http://ssdl.iitd.ac.in/vssdl/jayprakash/examples/pristine.php" target="_blank">	 -->
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 10px;">Enter The First Frequency (in kHz) :</p> 
  
-            <input type="Number" id="thck4" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt1" style="position: absolute; left: 430px; top: 15px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 18px; left: 590px;">*</span>
 
             <p class="incanvas" style="font-size:15px; position: absolute; left: 0px; top: 85px;">Enter The Second Frequency (in kHz) : </p>
 
-            <input type="Number" id="poi4" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
+            <input type="Number" name="txt2" style="position: absolute; left: 430px; top: 90px; width: 150px; border: 1px solid #000; padding-top: 2px; padding-bottom: 2px;" placeholder="Enter Number" >
             <span style="color: red; position: absolute; top: 93px; left: 590px;">*</span>
 
 
             </div>
 
-            <input class="incanvas" id="submit11" type="button" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="agesizeIn4()"/>
-
-		</div>
-
-<!--             <div id="notepad" style="position: absolute; top: 400px; width: 700px;  height: 60px; border: 1px solid #000; border-radius: 0px; background-color: #4c4b4b; margin-left: 50px; margin-right: 50px;">
-<!--             <span class="incanvas" style="font-size:15px; position: absolute; top: 0px; left: 0px; text-align: justify; color: #FFF;  padding-right: 10px;" ><strong>Note:</strong> Here, Moment of inertia is a property of shape that is used to predict deflection, bending and stress in beams.</span> -->
-            </div> -->
+            <input class="incanvas" type="submit" value="Submit" style="position: absolute; left: 505px; top: 330px; width: 100px; padding-top: 5px; padding-bottom: 5px; background-color: #2150a0; color: #FFF;" onclick="return check_submit4();"/>
+</form> 
+		<!--</div>-->
+			 <br><br>
+  
 
 
             <!--Blinking arrowcubox  -->

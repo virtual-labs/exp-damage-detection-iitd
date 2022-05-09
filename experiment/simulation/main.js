@@ -227,7 +227,8 @@ function navNext12()
 
 function reset()
 {
-    location.reload();
+    // location.reload();
+    window.location.href = "index.html";
 }
 
 
@@ -242,12 +243,174 @@ var t1 =0;
 var freq =0;
 
 
+function check_submit1()
+{
+var f1=parseInt(document.frm.txt1.value);
+var f2=parseInt(document.frm.txt2.value); 
+if(((parseInt(f1)&& parseInt(f2))<1) || ((parseInt(f1)&& parseInt(f2))>250))
+{
+alert("please enter Frequency Range Between 1 to 250");
+document.frm.txt1.focus();
+return false;
+} 
+if(document.frm.txt1.value ==='')
+{
+alert("Please enter first frequency");
+document.frm.txt1.focus();
+return false;
+}
+if(document.frm.txt2.value ==='')
+{
+alert("Please enter last frequency");
+document.frm.txt2.focus();
+return false;
+}
+if(parseInt(f1)>=parseInt(f2))
+{
+alert("Please enter last frequency greater than first frequency");
+document.frm.txt1.focus();
+return false;
+}
+return true; 
+}
+
+function check_submit2()
+{
+var f1=parseInt(document.frmb.txt1.value);
+var f2=parseInt(document.frmb.txt2.value); 
+if(((parseInt(f1)&& parseInt(f2))<1) || ((parseInt(f1)&& parseInt(f2))>250))
+{
+alert("please enter Frequency Range Between 1 to 250");
+document.frmb.txt1.focus();
+return false;
+} 
+if(document.frmb.txt1.value ==='')
+{
+alert("Please enter first frequency");
+document.frmb.txt1.focus();
+return false;
+}
+if(document.frmb.txt2.value ==='')
+{
+alert("Please enter last frequency");
+document.frmb.txt2.focus();
+return false;
+}
+if(parseInt(f1)>=parseInt(f2))
+{
+alert("Please enter last frequency greater than first frequency");
+document.frmb.txt1.focus();
+return false;
+}
+return true; 
+}
+
+
+function check_submit3()
+{
+var f1=parseInt(document.frmd.txt1.value);
+var f2=parseInt(document.frmd.txt2.value); 
+if(((parseInt(f1)&& parseInt(f2))<1) || ((parseInt(f1)&& parseInt(f2))>250))
+{
+alert("please enter Frequency Range Between 1 to 250");
+document.frmd.txt1.focus();
+return false;
+} 
+if(document.frmd.txt1.value ==='')
+{
+alert("Please enter first frequency");
+document.frmd.txt1.focus();
+return false;
+}
+if(document.frmd.txt2.value ==='')
+{
+alert("Please enter last frequency");
+document.frmd.txt2.focus();
+return false;
+}
+if(parseInt(f1)>=parseInt(f2))
+{
+alert("Please enter last frequency greater than first frequency");
+document.frmd.txt1.focus();
+return false;
+}
+return true; 
+}
+
+
+function check_submit4()
+{
+var f1=parseInt(document.frme.txt1.value);
+var f2=parseInt(document.frme.txt2.value); 
+if(((parseInt(f1)&& parseInt(f2))<1) || ((parseInt(f1)&& parseInt(f2))>250))
+{
+alert("please enter Frequency Range Between 1 to 250");
+document.frme.txt1.focus();
+return false;
+} 
+if(document.frme.txt1.value ==='')
+{
+alert("Please enter first frequency");
+document.frme.txt1.focus();
+return false;
+}
+if(document.frme.txt2.value ==='')
+{
+alert("Please enter last frequency");
+document.frme.txt2.focus();
+return false;
+}
+if(parseInt(f1)>=parseInt(f2))
+{
+alert("Please enter last frequency greater than first frequency");
+document.frme.txt1.focus();
+return false;
+}
+return true; 
+}
+
+
+
+function check_submit5()
+{
+var f1=parseInt(document.frmf.txt1.value);
+var f2=parseInt(document.frmf.txt2.value); 
+if(((parseInt(f1)&& parseInt(f2))<1) || ((parseInt(f1)&& parseInt(f2))>250))
+{
+alert("please enter Frequency Range Between 1 to 250");
+document.frmf.txt1.focus();
+return false;
+} 
+if(document.frmf.txt1.value ==='')
+{
+alert("Please enter first frequency");
+document.frmf.txt1.focus();
+return false;
+}
+if(document.frmf.txt2.value ==='')
+{
+alert("Please enter last frequency");
+document.frmf.txt2.focus();
+return false;
+}
+if(parseInt(f1)>=parseInt(f2))
+{
+alert("Please enter last frequency greater than first frequency");
+document.frmf.txt1.focus();
+return false;
+}
+return true; 
+}
+
+
+
+
 function agesizeIn()
 
 {
 
-    t1 = parseInt(document.getElementById("thck1").value);
-    p1 = parseInt(document.getElementById("poi1").value);
+    t1 = parseInt(document.getElementById("txt1").value);
+    p1 = parseInt(document.getElementById("txt2").value);
 
 
 // if (l1 !== "" && t1 !== "" && p1 !== "")
