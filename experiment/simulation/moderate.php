@@ -99,8 +99,8 @@ $(function () {
  var linePoints =
 
 <?php
-$txt1 = $_POST['txt1'];
-$txt2 = $_POST['txt2'];
+$txt1 = $_REQUEST['txt1'];
+$txt2 = $_REQUEST['txt2'];
 
 $gap = ($txt2 - $txt1)*10;
 
@@ -166,8 +166,8 @@ echo " " .$array_string;
     
     
     <?php
-    $txt1 = $_POST['txt1'];
-    $txt2 = $_POST['txt2'];
+    $txt1 = $_REQUEST['txt1'];
+    $txt2 = $_REQUEST['txt2'];
 
     $gap = ($txt2 - $txt1)*10;
     
@@ -223,4 +223,5 @@ i class="fa fa-arrow-right" style="color: #82C91E"></i>
 </table>
 </body>
 </html>
+
 
